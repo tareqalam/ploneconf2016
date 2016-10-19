@@ -1,20 +1,83 @@
 /* our custom styles */
 
-// DELETE ME:
-.custom-theme-marker {
-    display: none;
-    position: absolute;
-    top: 300px;
-    left: 30%;
-    margin: auto 0;
-    transform: rotate(-20deg);
-    background: #00ECFF;
-    color: #fff;
-    padding: 1em;
-    z-index: 100;
+/* Custom LESS file that is included from the theme.less file */
+
+.brand-name{
+    margin-top: 0.5em;
 }
-.section-front-page .custom-theme-marker{
-    display: block;
+
+.documentDescription{
+    margin-top: 1em;
+}
+
+.clearFix{
+    clear: both;
+}
+
+#left-sidebar {
+    padding-left: 0;
+}
+
+#right-sidebar {
+    padding-right: 0;
+}
+
+#content {
+    label, .label {
+        color: #333;
+        font-size: 100%;
+    }
+}
+
+.pat-autotoc.autotabs, .autotabs {
+    border-width: 0;
+}
+
+.portal-column-one .portlet,
+.portal-column-two .portlet {
+    .box;
+}
+
+footer .portletActions{
+}
+
+footer {
+    .portlet {
+        padding: 1em 0;
+        margin-bottom: 0;
+        border: 0;
+        background: transparent;
+        .portletContent{
+            border: 0;
+            background: transparent;
+            ul {
+                padding-left: 0;
+                list-style-type: none;
+                .portletItem {
+                    display: inline-block;
+                    &:not(:last-child){
+                        padding-right: 0.5em;
+                        margin-right: 0.5em;
+                        border-right: 1px solid;
+                    }
+                    &:hover{
+                        background-color: transparent;
+                    }
+                    a{
+                        color: #000;
+                        padding: 0;
+                        text-decoration: none;
+                        &:hover{
+                            background-color: transparent;
+                        }
+                        &::before{
+                            content: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 
 
